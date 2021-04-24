@@ -1,0 +1,6 @@
+<li><%= @task[:details] %> </li>
+
+<%= link_to "go back home", index_path  %>
+<%= link_to "delete #{@task.title}", delete_path(@task),
+    method: :delete,
+    data: { confirm: "Are you sure?" } %>
